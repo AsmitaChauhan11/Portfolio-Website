@@ -17,15 +17,15 @@ const projectsData = [
     },
     {
         id: 3,
-        title: "Pizza Website",
-        description: "Made a pizza website",
-        image: "/assets/pizza.png",
+        title: "Cafe Landing Page",
+        description: "Made a cafe landing page whete you can see the menu of the cafe, it's location and contact them.",
+        image: "/assets/landingpage.png",
     },
     {
         id: 4,
-        title: "Uttar Pradesh",
-        description: "Made a landing page of my home town in UP",
-        image: "/assets/uplandingpage.png",
+        title: "Dice Game",
+        description: "Made a dice game in which there are two players and two dices which roll randomly and tells which player win or it is draw.",
+        image: "/assets/dicegame.png",
     },
     {
         id: 5,
@@ -35,9 +35,9 @@ const projectsData = [
     },
     {
         id: 6,
-        title: "Chatbot",
-        description: "Made a python chatbot with whom you can ask questions",
-        image: "/assets/chatbot.png",
+        title: "Movie Recommendation",
+        description: "Made a python movie recommendation that recommend you movies based on your favorite movie.",
+        image: "/assets/movierecom.png",
     },
 ];
 const ProjectsSection = () => {

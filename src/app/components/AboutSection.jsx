@@ -26,7 +26,7 @@ const TAB_DATA = [
         content: (
             <ul className='list-disc pl-2'>
                 <li>GGSIPU</li>
-                <li>Amity International School</li>
+                <li>The Indian School</li>
             </ul>
         )
     },
@@ -60,7 +60,7 @@ const AboutSection = () => {
             />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-                <p className='text-base lg:text-lg'> Hi, I'm Ankit Bhardwaj a dedicated and skilled software developer with a passion for web development and artificial intelligence. He is a fast learner, capable of adapting to any work environment with ease. Alongside his professional skills, Ankit excels at football and enjoys playing outdoor games. He is known for his strong work ethic, reliability, and ability to collaborate effectively with team members, consistently delivering high-quality results..</p>
+                <p className='text-base lg:text-lg'> Hi, I'm Asmita Chauhan, a 21-year-old B.Tech IT student at IP University, passionate about coding and exploring diverse fields. I excel in art, craft, and creativity, embodying organization, efficiency, and a strong work ethic. A dedicated learner and listener, I leverage my skills to achieve goals effectively. Beyond coding, I value collaboration and continuous learning. I enjoy working closely with clients to understand their goals and deliver solutions that exceed expectations. My goal is not just to write code, but to create impactful digital experiences that leave a lasting impression.</p>
                 <div className='flex flex-row mt-8'>
                     <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}> {" "} Skills {" "} </TabButton>
                     <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}> {" "} Education {" "} </TabButton>
