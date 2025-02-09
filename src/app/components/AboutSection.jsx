@@ -70,7 +70,7 @@ const AboutSection = () => {
             />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-                <p className='text-base lg:text-lg'> Hi, I'm Asmita Chauhan, a final-year B.Tech IT student at IP University, with a CGPA of 9.2. My passion for coding, creativity, and problem-solving drives me to explore diverse fields in technology. A quick learner and problem solver, I thrive in team environments, bringing efficiency, innovation, and a strong work ethic to every project. Always eager to explore new technologies and methodologies, I strive to stay ahead in the ever-evolving tech landscape.</p>
+                <p className='text-base lg:text-lg'> Hi, I&apos;m Asmita Chauhan, a final-year B.Tech IT student at IP University, with a CGPA of 9.2. My passion for coding, creativity, and problem-solving drives me to explore diverse fields in technology. A quick learner and problem solver, I thrive in team environments, bringing efficiency, innovation, and a strong work ethic to every project. Always eager to explore new technologies and methodologies, I strive to stay ahead in the ever-evolving tech landscape.</p>
                 <div className='flex flex-row mt-8'>
                     <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}> {" "} Skills {" "} </TabButton>
                     <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}> {" "} Education {" "} </TabButton>

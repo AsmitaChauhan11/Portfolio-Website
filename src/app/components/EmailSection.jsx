@@ -50,9 +50,9 @@ const EmailSection = () => {
           <h2 className="text-center text-4xl font-bold text-white mt-16">Contact Me</h2>
           <section className="grid md:grid-cols-2 my-8 md:my-8 py-20 gap-4">
             <div>
-              <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
+              <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
               <p className="text-[#ADB7BE] mb-4 max-w-md">
-                I'm actively looking for exciting job opportunities and would love to connect! If you're hiring or just want to chat, feel free to reach out—I can't wait to connect and apply! 😊✨
+                I&apos;m actively looking for exciting job opportunities and would love to connect! If you&apos;re hiring or just want to chat, feel free to reach out — I can&apos;t wait to connect and apply! 😊✨
               </p>
               <div className="socials flex flex-row gap-6">
                 <Link href="https://github.com/AsmitaChauhan11">
