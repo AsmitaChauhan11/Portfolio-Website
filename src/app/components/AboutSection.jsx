@@ -2,7 +2,6 @@
 import React, {useTransition, useState} from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
-import { Content } from 'next/font/google'
 
 const TAB_DATA = [
     {
@@ -10,13 +9,13 @@ const TAB_DATA = [
         id: "skills",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Node.js</li>
-                <li>SQL</li>
+                <li>React.js</li>
+                <li>MySQL</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Java</li>
-                <li>AI</li>
+                <li>Next.js</li>
             </ul>
         )
     },
@@ -25,8 +24,8 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className='list-disc pl-2'>
-                <li>GGSIPU</li>
-                <li>The Indian School</li>
+                <li>GGSIPU BTech (2021-25)</li>
+                <li>The Indian School (10th & 12th)</li>
             </ul>
         )
     },
@@ -37,6 +36,17 @@ const TAB_DATA = [
             <ul className='list-disc pl-2'>
                 <li>Apna College - Java DSA</li>
                 <li>Udemy - Web Development</li>
+                <li>Walmart USA Advanced Software Engineering Virtual Experience Program on Forage </li>
+            </ul>
+        )
+    },
+    {
+        title: "Extra-Curricular",
+        id: "extracurricular",
+        content: (
+            <ul className='list-disc pl-2'>
+                <li>Active member of The Campus Chronicles Society ADGIPS</li>
+                <li>Volunteered for Hope Project Charitable Trust(NGO)</li>
             </ul>
         )
     }
@@ -60,11 +70,12 @@ const AboutSection = () => {
             />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-                <p className='text-base lg:text-lg'> Hi, I'm Asmita Chauhan, a 21-year-old B.Tech IT student at IP University, passionate about coding and exploring diverse fields. I excel in art, craft, and creativity, embodying organization, efficiency, and a strong work ethic. A dedicated learner and listener, I leverage my skills to achieve goals effectively. Beyond coding, I value collaboration and continuous learning. I enjoy working closely with clients to understand their goals and deliver solutions that exceed expectations. My goal is not just to write code, but to create impactful digital experiences that leave a lasting impression.</p>
+                <p className='text-base lg:text-lg'> Hi, I'm Asmita Chauhan, a final-year B.Tech IT student at IP University, with a CGPA of 9.2. My passion for coding, creativity, and problem-solving drives me to explore diverse fields in technology. A quick learner and problem solver, I thrive in team environments, bringing efficiency, innovation, and a strong work ethic to every project. Always eager to explore new technologies and methodologies, I strive to stay ahead in the ever-evolving tech landscape.</p>
                 <div className='flex flex-row mt-8'>
                     <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}> {" "} Skills {" "} </TabButton>
                     <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}> {" "} Education {" "} </TabButton>
                     <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}> {" "} Certifications {" "} </TabButton>
+                    <TabButton selectTab={() => handleTabChange("extracurricular")} active={tab === "extracurricular"}> {" "} Extra-Curricular {" "} </TabButton>
                 </div>
                 <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}
                 </div>
