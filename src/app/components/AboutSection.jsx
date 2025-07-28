@@ -16,6 +16,7 @@ const TAB_DATA = [
                 <li>JavaScript</li>
                 <li>Java</li>
                 <li>Next.js</li>
+                <li>Python</li>
             </ul>
         )
     },
@@ -24,7 +25,7 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className='list-disc pl-2'>
-                <li>GGSIPU BTech (2021-25)</li>
+                <li>GGSIPU BTech (2021-25) - CGPA 9.2</li>
                 <li>The Indian School (10th & 12th)</li>
             </ul>
         )
@@ -34,6 +35,8 @@ const TAB_DATA = [
         id: "certifications",
         content: (
             <ul className='list-disc pl-2'>
+                <li>AIML Intern at Nokia</li>
+                <li>Kissflow App building certification</li>
                 <li>Apna College - Java DSA</li>
                 <li>Udemy - Web Development</li>
                 <li>Walmart USA Advanced Software Engineering Virtual Experience Program on Forage </li>
@@ -63,11 +66,6 @@ const AboutSection = () => {
   return (
     <section className='text-white'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-            <Image 
-                src='/image/aboutme.jpg'
-                width={500} 
-                height={500}
-            />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                 <p className='text-base lg:text-lg'> Hi, I&apos;m Asmita Chauhan, a final-year B.Tech IT student at IP University, with a CGPA of 9.2. My passion for coding, creativity, and problem-solving drives me to explore diverse fields in technology. A quick learner and problem solver, I thrive in team environments, bringing efficiency, innovation, and a strong work ethic to every project. Always eager to explore new technologies and methodologies, I strive to stay ahead in the ever-evolving tech landscape.</p>
@@ -80,6 +78,12 @@ const AboutSection = () => {
                 <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}
                 </div>
             </div>
+            <Image 
+                className='mt-4'
+                src='/image/aboutme.jpg'
+                width={500} 
+                height={500}
+            />
         </div>
     </section>
   );

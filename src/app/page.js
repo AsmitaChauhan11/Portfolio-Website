@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
+import InternshipSection from "./components/InternshipSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
@@ -14,6 +15,9 @@ export default function Home() {
         <HeroSection />
         <section id="about">
           <AboutSection />
+        </section>
+        <section id="internship">
+          <InternshipSection />
         </section>
         <section id="projects">
           <ProjectsSection />
